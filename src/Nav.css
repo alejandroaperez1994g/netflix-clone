@@ -7,6 +7,14 @@
 
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+
+  /* animation*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_black {
   background-color: #111;
 }
 
