@@ -44,20 +44,6 @@ function Row({ title, fetchURL, isLargeRow }) {
         }
     }
 
-    const handleClickTest = (movie) => {
-        // console.log(movie?.name || movie?.title);
-        if (movie?.name) {
-            console.log(movie.name);
-            movieTrailer((movie.name).toString(), { id: 1 })
-                .then(response => console.log(response))
-        } else {
-            console.log('Tiene title');
-            movieTrailer((movie.title).toString(), { id: 1 })
-                .then(response => console.log(response))
-        }
-        // movieTrailer(movie?.name || movie?.title, { id: 1 })
-        //     .then(response => console.log(response))
-    }
 
     return (
         <div className="row">
