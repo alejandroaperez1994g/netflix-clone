@@ -1,0 +1,45 @@
+[debug] [2021-04-07T05:14:01.714Z] ----------------------------------------------------------------------
+[debug] [2021-04-07T05:14:01.716Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-07T05:14:01.717Z] CLI Version:   9.8.0
+[debug] [2021-04-07T05:14:01.718Z] Platform:      win32
+[debug] [2021-04-07T05:14:01.718Z] Node Version:  v14.16.0
+[debug] [2021-04-07T05:14:01.720Z] Time:          Tue Apr 06 2021 22:14:01 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-04-07T05:14:01.720Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-07T05:14:01.723Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-04-07T05:14:01.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-07T05:14:01.756Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Desoft\React\netflix-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-04-07T05:14:19.701Z] > refreshing access token with scopes: []
+[debug] [2021-04-07T05:14:19.702Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-07T05:14:20.247Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 07 Apr 2021 02:06:45 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-07T05:14:20.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-04-07T05:14:21.242Z] Failed to make request: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=100 reason: Unexpected token < in JSON at position 0
+[debug] [2021-04-07T05:14:27.938Z] FirebaseError: Failed to make request: invalid json response body at https://firebase.googleapis.com/v1beta1/projects?pageSize=100 reason: Unexpected token < in JSON at position 0
+    at Client.request (C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:109:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getProjectPage (C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:232:17)
+    at async getFirebaseProjectPage (C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:249:23)
+    at async selectProjectInteractively (C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
