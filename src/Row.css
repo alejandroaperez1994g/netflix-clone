@@ -1,0 +1,85 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row_posters {
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}
+
+.row_posters > h4 {
+  font-size: small;
+}
+
+/* New CSS fron Example */
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.movie_card {
+  padding: 0 !important;
+  width: 22rem;
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 450ms;
+}
+.movie_card::-webkit-scrollbar {
+  display: none;
+}
+
+.movie_card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15rem;
+  cursor: pointer;
+}
+
+.movie_info {
+  color: #5e5c5c;
+  font-weight: 900;
+}
+
+.movie_info i {
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: 900;
+}
+.movie_card:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
