@@ -17,6 +17,9 @@
     "react-scripts": "4.0.3",
     "react-youtube": "7.13.1"
   },
+  "engines":{
+    "node":"16.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
